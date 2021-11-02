@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/selectorCounterFragment">
+
+    <fragment
+        android:id="@+id/selectorCounterFragment"
+        android:name="com.greedy0110.mvrxcounter.selector.SelectorCounterFragment"
+        android:label="fragment_selector_counter"
+        tools:layout="@layout/fragment_selector_counter">
+        <action
+            android:id="@+id/action_selectorCounterFragment_to_counterFragment1"
+            app:destination="@id/counterFragment1" />
+        <action
+            android:id="@+id/action_selectorCounterFragment_to_counterFragment2"
+            app:destination="@id/counterFragment2" />
+        <action
+            android:id="@+id/action_selectorCounterFragment_to_counterFragment3"
+            app:destination="@id/counterFragment3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/counterFragment1"
+        android:name="com.greedy0110.mvrxcounter.counter.SharedCounterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" />
+
+    <fragment
+        android:id="@+id/counterFragment2"
+        android:name="com.greedy0110.mvrxcounter.counter.SharedCounterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" />
+
+    <fragment
+        android:id="@+id/counterFragment3"
+        android:name="com.greedy0110.mvrxcounter.counter.CounterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" />
+</navigation>

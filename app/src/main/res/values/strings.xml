@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MvRxCounter</string>
+
+    <string name="to_counter1">to counter 1</string>
+    <string name="to_counter2">to counter 2</string>
+    <string name="to_counter3">to counter 3</string>
 </resources>
